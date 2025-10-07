@@ -9,7 +9,6 @@ Django>=3.2,<4.0
 djangorestframework>=3.12,<4.0
 djangorestframework-simplejwt==5.3.1
 django-cors-headers==3.2.1
-django-heroku==0.3.1
 django-phonenumber-field==4.0.0
 django-elasticsearch-dsl==8.0.0
 elasticsearch>=8.0.0,<9.0.0
@@ -19,9 +18,8 @@ phonenumberslite==8.12.6
 pycodestyle==2.6.0
 PyJWT==1.7.1
 python-dateutil==2.8.1
-pytz==2020.1
 six==1.15.0
-sqlparse==0.3.1
 toml==0.10.1
 urllib3>=1.26.2,<2
 whitenoise==5.1.0
+psycopg2-binary
