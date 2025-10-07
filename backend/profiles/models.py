@@ -19,8 +19,8 @@ class TimestampedModel(models.Model):
 
 
 class EmployeeProfile(models.Model):
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, to_field='username', unique=True)
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, to_field='username')
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
     gender = models.CharField(max_length=50)
