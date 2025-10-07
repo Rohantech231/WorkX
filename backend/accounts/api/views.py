@@ -84,5 +84,6 @@ def login(request):
     token = get_tokens_for_user(user)
     serializer = UserSerializer(user)
     data = serializer.data
+    data["token"] = token
     return Response({"data": data},
                     status=HTTP_200_OK)
